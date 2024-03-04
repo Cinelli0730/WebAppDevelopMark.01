@@ -1,5 +1,30 @@
 import 'package:flutter/material.dart';
 
+///ログイン画面（At111）
+///ユーザーコードとユーザーパスワード入力項目とログインボタンを持つ
+///ログインボタン押下時入力値をバックエンドに送信、応答により決まった動作を行う
+///
+///ユーザーコードとユーザーパスワードの組み合わせが正しい場合
+///他ページへ遷移
+///
+///ユーザーコードとユーザーパスワードの組み合わせが誤っている場合
+///応答メッセージからエラーメッセージを生成し、ユーザーに通知する
+class At111 extends StatelessWidget {
+  const At111({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const SignInPage(),
+    );
+  }
+}
+
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
 

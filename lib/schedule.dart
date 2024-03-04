@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// TODO ListViewサンプルプログラムで十分画面の作成ができそうならそちらで開発する
+
 class ScheduleWidget extends StatefulWidget {
   final int _NumColumn = 1;
   final int _NumLine = 7;
