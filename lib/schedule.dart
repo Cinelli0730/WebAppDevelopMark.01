@@ -52,10 +52,7 @@ class _DateCell extends State<DateCell> {
       children: [
         const Text("01/22"),
         DropdownButton(
-          items: const [
-            DropdownMenuItem(value: 0, child: Text("出勤")),
-            DropdownMenuItem(value: 1, child: Text("欠勤"))
-          ],
+          items: const [DropdownMenuItem(value: 0, child: Text("出勤")), DropdownMenuItem(value: 1, child: Text("欠勤"))],
           onChanged: (int? value) {
             setState(() {
               dropDownMenuItemIdx = value;
