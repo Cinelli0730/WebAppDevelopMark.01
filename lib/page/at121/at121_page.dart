@@ -28,7 +28,7 @@ class _AT121State extends State<AT121Page> {
         roleName: widget.loginDto.roleDto.roleName,
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 20, left: 50, right: 50), // 上に余白を追加
+        padding: const EdgeInsets.only(top: 20, left: 50, right: 50), // 上に余白を追加
         child: ListView.builder(
           itemCount: _todoItems.length,
           itemBuilder: (context, index) {
